@@ -12,8 +12,7 @@
     width: 25%;
     border: 1px solid gray;
     padding: 10px 12px;
-    min-width: 286px;
-    height: 510px;
+    min-width: 270px;
     border-radius: 20px;
     margin: 10px;
 }
@@ -30,8 +29,7 @@
     width: 23%;
     border: 1px solid gray;
     padding: 10px 12px;
-    min-width: 286px;
-    height: 510px;
+    min-width: 270px;
     border-radius: 20px;
     margin: 10px;
 }
@@ -69,7 +67,6 @@
 
 #banner3 .banner-box:nth-child(2) {
     height: 30vh;
-    min-width: 30%;
     background-image: url(./img/banner/b4.jpg);
     background-position: center;
     background-size: cover;
@@ -80,11 +77,25 @@
 
 #banner3 .banner-box:nth-child(3) {
     height: 30vh;
-    min-width: 30%;
     background-image: url(./img/banner/b16.jpg);
     background-position: center;
     background-size: cover;
     line-height: 30px;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 572px) {
+    .product {
+        margin-left: 56px;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 300px;
+        margin: 15px 0;
+    }
+
+    #sm-banner .banner-box:nth-child(2) {
+        min-width: 300px;
+    }
 }
